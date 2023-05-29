@@ -8,4 +8,4 @@ RUN npm test
 FROM gcr.io/distroless/nodejs20-debian11
 COPY --from=build-env /src /src
 WORKDIR /src
-ENTRYPOINT ["server.js"]
+CMD ["server.js"]
