@@ -10,10 +10,10 @@ jobs:
   cli:
     runs-on: ubuntu-latest
     container: 
-      image: ghcr.io/heidermassu/heidermassu/js-app-01/js-app-01:v1.1 sleep infinity
+      image: ghcr.io/heidermassu/heidermassu/js-app-01/js-app-01:v1.1
     steps:
       - name: build docker image application
-        run: build
+        run: build sleep infinity
       
       - name: push docker image application
         run: push
