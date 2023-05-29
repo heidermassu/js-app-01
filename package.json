@@ -1,10 +1,10 @@
 {
-    "name": "hello-world-app",
+    "name": "js-app-01",
     "version": "1.0.0",
     "description": "Hello World App",
     "scripts": {
       "start": "node server.js",
-      "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "echo \"No test specified\" && exit 0"
     },
     "dependencies": {
       "express": "^4.17.1"

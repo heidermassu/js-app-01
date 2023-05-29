@@ -10,7 +10,7 @@ jobs:
   cli:
     runs-on: ubuntu-latest
     container: 
-      image: ghcr.io/heidermassu/js-app-01.git:latest
+      image: ghcr.io/heidermassu/heidermassu/js-app-01/js-app-01:v1.1
     steps:
       - name: build docker image application
         run: build

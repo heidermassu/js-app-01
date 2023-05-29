@@ -3,8 +3,9 @@ COPY . /src
 WORKDIR /src
 RUN npm ci
 RUN npm run build --if-present
+RUN npm test
 
 FROM gcr.io/distroless/nodejs20-debian11
 COPY --from=build-env /src /src
 WORKDIR /src
-CMD ["index.js"]
+CMD ["server.js"]
